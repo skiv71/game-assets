@@ -9,6 +9,10 @@
     "./tileset": {
       "default": "./dist/tileset/index.js",
       "types": "./dist/tileset/index.d.ts"
+    },
+    "./tileset/data": {
+      "default": "./dist/tileset/data.js",
+      "types": "./dist/tileset/data.d.ts"
     }
   },
   "type": "module",
