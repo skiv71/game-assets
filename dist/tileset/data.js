@@ -1,10 +1,10 @@
-export function tileData(x, y, width, height) {
-    return Object.freeze({
+function tileData(x, y, width, height) {
+    return [
         x,
         y,
         width,
         height
-    });
+    ];
 }
 export const blockTile = tileData(1, 1, 33, 33);
 export const planeTile = tileData(1, 35, 67, 22);

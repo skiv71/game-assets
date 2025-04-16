@@ -1,22 +1,21 @@
-type TileData = {
-    x: number
-    y: number
-    width: number
-    height: number
-}
+type TileXY = [number, number]
 
-export function tileData(
+type TileWH = [number, number]
+
+export type TileData = [...TileXY, ...TileWH]
+
+function tileData(
     x: number,
     y: number,
     width: number,
     height: number
 ): TileData {
-    return Object.freeze({
+    return [
         x,
         y,
         width,
         height
-    })
+    ] as const
 } 
 
 export const blockTile = tileData(1, 1, 33, 33)
@@ -33,7 +32,7 @@ export const redWindowTile = tileData(35, 11, 7, 9)
 
 export function blockWindowXY(
     n: number
-): [number, number] {
+): TileXY {
     const cols = [4, 13, 22]
     const rows = [5, 19]
     const c = n % cols.length
@@ -41,5 +40,5 @@ export function blockWindowXY(
     return [
         cols[c],
         rows[r]
-    ]
+    ] as const
 }
