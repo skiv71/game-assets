@@ -2,11 +2,11 @@
   "name": "game-assets",
   "version": "1.0.0",
   "exports": {
-    "audio": {
+    "./audio": {
       "default": "./dist/audio/index.js",
       "types": "./dist/audio/index.d.ts"
     },
-    "tileset": {
+    "./tileset": {
       "default": "./dist/tileset/index.js",
       "types": "./dist/tileset/index.d.ts"
     }
