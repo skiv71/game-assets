@@ -25,13 +25,16 @@
     "copy:types": "npx copyup src/*.d.ts dist",
     "clean": "rimraf dist"
   },
-  "author": "Neil Duffy",
-  "license": "ISC",
+  "author": "Neil Duffy <skivy71@gmail.com>",
+  "license": "UNLICENSED",
   "description": "Game assets",
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "npm-run-all": "^4.1.5",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.3"
+  },
+  "repository": {
+    "url": "https://github.com/skiv71/game-assets"
   }
 }
