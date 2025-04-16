@@ -1,4 +1,4 @@
-function tileData(x, y, width, height) {
+export function tileData(x, y, width, height) {
     return Object.freeze({
         x,
         y,
@@ -17,8 +17,8 @@ export function blockWindowXY(n) {
     const rows = [5, 19];
     const c = n % cols.length;
     const r = Math.floor(n / cols.length);
-    return {
-        x: cols[c],
-        y: rows[r]
-    };
+    return [
+        cols[c],
+        rows[r]
+    ];
 }

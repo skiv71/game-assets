@@ -1,16 +1,11 @@
-interface TileXY {
-    x: number,
+type TileData = {
+    x: number
     y: number
-}
-
-interface TileWH {
-    width: number,
+    width: number
     height: number
 }
 
-export interface TileData extends TileXY, TileWH {}
-
-function tileData(
+export function tileData(
     x: number,
     y: number,
     width: number,
@@ -38,13 +33,13 @@ export const redWindowTile = tileData(35, 11, 7, 9)
 
 export function blockWindowXY(
     n: number
-): TileXY {
+): [number, number] {
     const cols = [4, 13, 22]
     const rows = [5, 19]
     const c = n % cols.length
     const r = Math.floor(n / cols.length)
-    return {
-        x: cols[c],
-        y: rows[r]
-    }
+    return [
+        cols[c],
+        rows[r]
+    ]
 }
