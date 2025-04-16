@@ -46,11 +46,11 @@ The `blockWindowXY` is a function which provides an `[x, y]` position based on a
 blockWindowTile(index: number) => [x: number, y: number]
 ```
 
-You can use this data to draw a `xxxWindowTile` image on the `blockTile` image.
+You can use this data to place an `xxxWindowTile` image on the `blockTile` image.
 
 ### Audio
 
-The audio via the following `exports`
+The audio module provides the following `exports`
 
 ```javascript
 import {
