@@ -5,4 +5,5 @@ export declare const bombTile: TileData;
 export declare const explosionTile: TileData;
 export declare const yellowWindowTile: TileData;
 export declare const redWindowTile: TileData;
+export declare function blockWindowXY(n: number): [number, number];
 //# sourceMappingURL=data.d.ts.map

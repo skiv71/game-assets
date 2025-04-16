@@ -4,3 +4,13 @@ export const bombTile = [43, 1, 9, 17];
 export const explosionTile = [53, 1, 22, 22];
 export const yellowWindowTile = [35, 1, 7, 9];
 export const redWindowTile = [35, 11, 7, 9];
+export function blockWindowXY(n) {
+    const cols = [4, 13, 22];
+    const rows = [5, 19];
+    const c = n % cols.length;
+    const r = Math.floor(n / cols.length);
+    return [
+        cols[c],
+        rows[r]
+    ];
+}
