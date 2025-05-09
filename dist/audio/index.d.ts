@@ -1,5 +1,5 @@
-export { default as bombAudio } from './bomb.wav';
-export { default as explosionAudio } from './explosion.wav';
-export { default as failAudio } from './fail.wav';
-export { default as planeAudio } from './plane.wav';
+export { default as bombAudio } from './bomb.mp3';
+export { default as explosionAudio } from './explosion.mp3';
+export { default as failAudio } from './fail.mp3';
+export { default as planeAudio } from './plane.mp3';
 //# sourceMappingURL=index.d.ts.map
