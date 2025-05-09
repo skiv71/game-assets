@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "postbuild": "run-p copy:audio copy:tileset copy:types",
-    "copy:audio": "npx copyup src/audio/*.wav dist",
+    "copy:audio": "npx copyup src/audio/*.mp3 dist",
     "copy:tileset": "npx copyup src/tileset/*.png dist",
     "copy:types": "npx copyup src/*.d.ts dist",
     "clean": "rimraf dist"
